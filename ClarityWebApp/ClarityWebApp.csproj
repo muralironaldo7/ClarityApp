@@ -64,8 +64,16 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.Web.UI, Version=2017.2.621.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Telerik\UI for ASP.NET AJAX R2 2017\Bin45\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Telerik\UI for ASP.NET AJAX R2 2017\Bin45\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\logo.png" />
     <Content Include="packages.config" />
     <Content Include="Layout.Master" />
     <Content Include="Login.aspx" />
@@ -77,6 +85,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Refs\bootstrap-theme.min.css" />
+    <Content Include="Refs\bootstrap.min.css" />
+    <Content Include="Refs\bootstrap.min.js" />
+    <Content Include="Refs\jquery.min.js" />
+    <Content Include="Refs\SiteStyle.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -95,6 +108,9 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
